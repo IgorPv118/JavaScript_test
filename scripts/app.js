@@ -90,11 +90,11 @@
 // }
 // alert(testY);
 //5 задание
-// const firstNum = prompt('Введите первое число')
-// const mathOperator = prompt('Введите действие (знаки: + - * /)')
-// const secondNum = prompt('Введите второе число')
+// const firstNum = +prompt('Введите первое число')
+// const mathOperator = +prompt('Введите действие (знаки: + - * /)')
+// const secondNum = +prompt('Введите второе число')
 // if(mathOperator === '+'){
-//     alert(+firstNum + +secondNum)
+//     alert(firstNum + secondNum)
 // }else if(mathOperator === '-'){
 //     alert(firstNum - secondNum)
 // }else if(mathOperator === '*'){
@@ -104,4 +104,4 @@
 // }else{
 //     alert('Вы ввели неверное действие :(')
 // }
-// console.log()
+
