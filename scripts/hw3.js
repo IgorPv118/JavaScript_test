@@ -1,7 +1,60 @@
 "use strict";
 
-//Задание 1 и 3 в одном решении (решил совместить)
-function calculateData(userNumber){
+//Задание 1
+
+/* function showNumbers(firstUserNum, secondUserNum){
+    if(firstUserNum < secondUserNum){
+        for(let i = firstUserNum; i <= secondUserNum; i++){
+            console.log(i)
+        }
+    }else{
+        for(let i = firstUserNum; i >= secondUserNum; i--){
+            console.log(i)
+        }
+    }
+}
+
+while(true){
+    const firstUserNum = +prompt("Введите первое число")
+    const secondUserNum = +prompt("Введите второе число")
+    if(Math.abs(firstUserNum - secondUserNum) < 4){
+        alert("Слишком маленький диапозон чисел, попробуйте снова")
+        continue
+    }else{
+        showNumbers(firstUserNum, secondUserNum)
+        break
+    }
+} */
+
+//2 задание
+
+/* const pinCode = 7777;
+const pukCode = 1234;
+const attempts = 3;
+
+for (let i = 0; i < attempts; i++) {
+  const userChoicePin = +prompt("Введите секретный pin-code");
+  if (userChoicePin === pinCode) {
+    alert("Pin-code верный");
+    break;
+  } else {
+    alert("Pin-code не верный. Попробуйте снова");
+    if (i === attempts - 1 && userChoicePin !== pinCode) {
+      for (let k = 0; k < attempts; k++) {
+        const userChoicePuk = +prompt("Введите секретный puk-code");
+        if (userChoicePuk === pukCode) {
+          alert("Puk-code верный.");
+          break;
+        } else {
+          alert("Puk-code не верный. Попробуйте снова");
+        }
+      }
+    }
+  }
+} */
+
+//3 задание
+/* function calculateData(userNumber){
     let perity
     let integrity
     let quantity
@@ -38,26 +91,28 @@ function calculateData(userNumber){
     console.log(`${userNumber} ${result}`)
 }
 
-function showNumbers(firstUserNum, secondUserNum){
-    if(firstUserNum < secondUserNum){
-        for(let i = firstUserNum; i <= secondUserNum; i++){
-            calculateData(i)
-        }
-    }else{
-        for(let i = firstUserNum; i >= secondUserNum; i--){
-            calculateData(i)
-        }
+const firstNumber = +prompt("Введите первое число")
+const secondNumber = +prompt("Введите второе число")
+if(firstNumber < secondNumber){
+    for(let i = firstNumber; i <= secondNumber; i++){
+        calculateData(i)
     }
-}
+}else{
+    for(let i = firstNumber; i >= secondNumber; i--){
+        calculateData(i)
+    }
+} */
 
-while(true){
-    const firstUserNum = +prompt("Введите первое число")
-    const secondUserNum = +prompt("Введите второе число")
-    if(Math.abs(firstUserNum - secondUserNum) < 4){
-        alert("Слишком маленький диапозон чисел, попробуйте снова")
-        continue
-    }else{
-        showNumbers(firstUserNum, secondUserNum)
-        break
+//4 задание
+/* const firstNumber = +prompt("Введите первое число")
+const secondNumber = +prompt("Введите второе число")
+const iterations = 7
+if(firstNumber < secondNumber){
+    for(let i = firstNumber; i < (firstNumber + iterations) && i <= secondNumber; i++){
+        console.log(i)
     }
-}
+}else{
+    for(let i = firstNumber; i > (firstNumber - iterations) && i >= secondNumber; i--){
+        console.log(i)
+    }
+}  */
