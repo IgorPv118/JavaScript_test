@@ -104,4 +104,14 @@
 // }else{
 //     alert('Вы ввели неверное действие :(')
 // }
+// console.log(null || 1)
 
+/* const arr = ['about', 'About']
+const numArr = [1000,2,1,3]
+
+console.log(arr.sort())
+console.log(numArr.sort((a, b) => a - b))
+console.log(arr.sort((a, b) => a > b ? 1 : -1))
+
+const filterArr = numArr.filter(i => i < 3)
+console.log(filterArr) */
