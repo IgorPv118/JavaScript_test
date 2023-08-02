@@ -11,7 +11,7 @@
 
 // const enterAge = prompt('Введите свой возвраст')
 // switch(+enterAge) {
-//     case 18 : 
+//     case 18 :
 //         console.log('18')
 //         break
 //     case 20 :
@@ -104,4 +104,98 @@
 // }else{
 //     alert('Вы ввели неверное действие :(')
 // }
+// console.log(null || 1)
 
+/* const arr = ['about', 'About']
+
+
+console.log(arr.sort())
+console.log(numArr.sort((a, b) => a - b))
+console.log(arr.sort((a, b) => a > b ? 1 : -1))
+
+const filterArr = numArr.filter(i => i < 3)
+console.log(filterArr) */
+/* const numArr = [1000,2,1,3, null, undefined, false, 0]
+const newArr = numArr.filter(i => Boolean(i))
+console.log(newArr) */
+
+/* const arr = [1,2,3,4,]
+arr.push(5) // Добавляем значение в массив последним эллементом
+console.log(arr)
+arr.pop() // Удаляем последний эллемент
+console.log(arr) */
+//лучше не использовать
+/* arr.unshift(0) // добавляет в начало 
+console.log(arr)
+arr.shift(0) // удаляет первый эллемент
+console.log(arr) */
+
+/* function getValue(arr){
+    const newArr = []
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] > 1){
+            newArr.push(arr[i])
+        }
+    }
+    return newArr
+}
+console.log(getValue([1,2,3])) */
+
+/* const arr = [[1,2,3]] */
+/* arr.forEach(i => console.log(i)) // Только пробегаем по циклу
+arr.map(i => console.log(i))  // Тоже самое, только можно добавлять условие */
+/* console.log(arr.flat()) */ // поднимаем массив на уровень выше
+
+/* const arr = [
+    [
+        1,0,1,
+        0,1,1,
+        0,0,1
+    ]
+]
+function getOneNumber(array){
+    const newArr = array.flat()
+    let count = 0
+    for(let i = 0; i < newArr.length; i++){
+        if(newArr[i] === 1){
+            count += 1
+        }
+    }
+    return count
+}
+console.log(getOneNumber(arr)) */
+
+/* const person = {
+  name: "Игорь",
+  age: 23,
+  skills: {
+    react: true,
+    angular: false,
+  },
+  sayHi: function () {
+    return `Hello ${this.name}`;
+  },
+  sayHiArrow: () => {
+    return `Hello ${this.name}`; //Зиз не работает в стрелочной функции
+  },
+}; */
+/* console.log(person.sayHiArrow()) */
+/* console.log(Object.keys(person))
+console.log(Object.values(person))
+console.log(Object.entries(person))
+console.log(Object.is(NaN, NaN)) // проверка на равенство */
+
+/* const obj = {
+  a: 1,
+  b: 2,
+  k: {
+    a: 1,
+    b: 2,
+  },
+}; */
+/* const obj1 = { ...obj }; // копирование объекта */
+/* const obj1 = JSON.parse(JSON.stringify(obj)) // полное копирование объекта
+
+obj1.k.a = 3;
+console.log(obj);
+console.log(obj1); */
