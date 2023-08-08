@@ -9,23 +9,22 @@
     }
   } else {
     for (let i = firstUserNum; i >= secondUserNum; i--) {
-      return i;
+      console.log(i);
     }
   }
 }
 
-while (true) {
-  const firstUserNum = +prompt("Введите первое число");
-  const secondUserNum = +prompt("Введите второе число");
-  if (Math.abs(firstUserNum - secondUserNum) < 4) {
-    alert("Слишком маленький диапозон чисел, попробуйте снова");
-    continue;
-  } else {
-    showNumbers(firstUserNum, secondUserNum);
-    break;
-  }
+let firstUserNum = +prompt("Введите первое число");
+let secondUserNum = +prompt("Введите второе число");
+if (Math.abs(firstUserNum - secondUserNum) < 4) {
+  do {
+    firstUserNum = +prompt("Введите первое число");
+    secondUserNum = +prompt("Введите второе число");
+  } while (Math.abs(firstUserNum - secondUserNum) < 4);
+  showNumbers(firstUserNum, secondUserNum);
+} else {
+  showNumbers(firstUserNum, secondUserNum);
 } */
-
 //2 задание
 
 /* const pinCode = 7777;

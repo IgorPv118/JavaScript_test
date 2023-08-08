@@ -178,10 +178,10 @@ console.log(getOneNumber(arr)) */
   sayHiArrow: () => {
     return `Hello ${this.name}`; //Зиз не работает в стрелочной функции
   },
-}; */
+};  */
 /* console.log(person.sayHiArrow()) */
-/* console.log(Object.keys(person))
-console.log(Object.values(person))
+/* console.log(Object.keys(person)) */
+/* console.log(Object.values(person))
 console.log(Object.entries(person))
 console.log(Object.is(NaN, NaN)) // проверка на равенство */
 
@@ -199,3 +199,62 @@ console.log(Object.is(NaN, NaN)) // проверка на равенство */
 obj1.k.a = 3;
 console.log(obj);
 console.log(obj1); */
+
+
+/* let a = +prompt("one")
+let b = +prompt("two")
+let c = a
+do{
+  console.log(c)
+  c++
+}while (c <= b) */
+
+/* function minNumber(arr){
+  return Math.min(...arr)
+}
+console.log(minNumber([34, 15, 88, 2])) */
+
+/* const a = [1,2,3]
+const b = ['a', 'b']
+// const c = a.concat(b)
+const c = [...a, ...b]
+console.log(c) */
+
+//const arr = [1, 2, 3]
+/* const arr = new Array(3).fill(1)
+console.log(arr)
+ */
+/* const arr = []
+console.log(Array.isArray(arr)) */ // проверка на массив
+
+/* const movies = [
+  {
+    title: "terminator",
+    date: 1994,
+    rating: 10,
+    genre: "action",
+  },
+  {
+    title: "titanic",
+    date: 1992,
+    rating: 2,
+    genre: "romantic",
+  },
+  {
+    title: "saw",
+    date: 2004,
+    rating: 6,
+    genre: "horror",
+  },
+];
+const movieAction = movies.filter((movie) => movie.title === "terminator" ? movie.title = "robocop": movie.title = movie.title)
+const movieChangeTitle = movies.map(movie => movie.title === "terminator" ? movie.title = "robocop": movie.title = movie.title)
+console.log(movieChangeTitle) 
+console.log(movies)  */
+/* console.log(numArr.sort((a, b) => a - b)) */
+
+/* const arrAny = [1, 2, 3] */
+/* const arrAny1 = arrAny.includes(0) */ // Проверка, входит ли значение в массив
+/* const arrAny1 = arrAny.some(i => i === 1) */ // Проверка, входит ли значение в массив хотя бы 1 раз
+/* const arrAny1 = arrAny.every(i => i === 1) */ // Проверка, все ли значения равны вашему значению
+/* console.log(arrAny1) */

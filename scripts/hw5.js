@@ -33,3 +33,5 @@ const myData = {
 myData.pet = "Cat"
 myData.profession = "Miner"
 console.log(myData.objectCheck()) */
+
+
